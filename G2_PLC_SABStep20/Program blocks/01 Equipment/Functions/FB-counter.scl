@@ -1,0 +1,16 @@
+﻿FUNCTION_BLOCK "FB-counter"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR 
+      Timer2s {InstructionName := 'TON_TIME'; LibVersion := '1.0'; S7_SetPoint := 'False'} : TON_TIME;
+      "Counter" { S7_SetPoint := 'True'} : Int;
+   END_VAR
+
+
+BEGIN
+	//ksjadgfksjdflksadf
+	////ksjadgfksjdflksadf
+	////ksjadgfksjdflksadf
+	////ksjadgfksjdflksadf
+END_FUNCTION_BLOCK
+
