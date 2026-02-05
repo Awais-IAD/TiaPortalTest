@@ -1,0 +1,22 @@
+﻿TYPE "UDT-SABload"
+VERSION : 0.1
+   STRUCT
+      Sts : Struct   // Status structure
+         axSesnor : Array[1..4] of Bool;
+         xCorrectpart : Bool;   // correct part indicaton
+         faulted : Bool;   // the module is faulted
+         State : Int;   // state machine value
+      END_STRUCT;
+      Cmd : Struct   // Command structure
+         spare : Bool;
+      END_STRUCT;
+      Cfg : Struct   // Configuration structure
+         xSpare : Bool;   // Spare
+      END_STRUCT;
+      Flt : Struct   // Fault structure
+         wTrigger : Word;   // Fault triggers
+      END_STRUCT;
+   END_STRUCT;
+
+END_TYPE
+

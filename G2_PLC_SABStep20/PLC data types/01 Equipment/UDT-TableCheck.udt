@@ -1,0 +1,21 @@
+﻿TYPE "UDT-TableCheck"
+VERSION : 0.1
+   STRUCT
+      Sts : Struct   // Status structure
+         xFaulted : Bool;   // System is in faulted state
+         xStartSensor : Bool;   // Spare
+         xLeftJigplaced : Bool;   // Left Jig is pleased with Left Bas sew program 
+         xRightJigPlaced : Bool;   // Right Jig is pleased with Right Bas sew program 
+         "xCorrect part" : Bool;   //  the part of the airbage is placed correctly
+      END_STRUCT;
+      Cmd : Struct   // Command structure
+         xJigpresent : Bool;
+         spare : Bool;
+      END_STRUCT;
+      Flt : Struct   // fault structure
+         wTrigger : Byte;   // fault trigger word
+      END_STRUCT;
+   END_STRUCT;
+
+END_TYPE
+
